@@ -1,9 +1,14 @@
 body{
-
-    padding: 1rem;
     background-color: black;
     max-width: fit-content;
     margin:1rem auto;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;    
+}
+.post{
+    padding: 1rem;
+    margin: 1rem;
     border-width: thin;
     border-style: solid;
     border-color: rgba(160, 160, 160, 0.664);
@@ -68,4 +73,11 @@ button{
 }
 button:hover{
     cursor: pointer;
+}
+
+@media(max-width:500px) {
+    .image{
+        width: 50%;
+        height: 50%;
+    }
 }
